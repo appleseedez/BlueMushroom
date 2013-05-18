@@ -1,0 +1,8 @@
+platform :ios, '5.0'
+pod 'RestKit' 
+pod 'RestKit/Testing' 
+
+
+target :EVATests, :exclusive => true do
+   pod 'Kiwi'
+end

@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18252B971746655B00FDCB11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1836BFCF1743834700753063 /* CoreGraphics.framework */; };
+		18252B9917468A3300FDCB11 /* 480x150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18252B9817468A3300FDCB11 /* 480x150.jpg */; };
+		1836BFCC1743834700753063 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1836BFCB1743834700753063 /* UIKit.framework */; };
+		1836BFCE1743834700753063 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1836BFCD1743834700753063 /* Foundation.framework */; };
+		1836BFD01743834700753063 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1836BFCF1743834700753063 /* CoreGraphics.framework */; };
+		1836BFD61743834700753063 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1836BFD41743834700753063 /* InfoPlist.strings */; };
+		1836BFD81743834700753063 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836BFD71743834700753063 /* main.m */; };
+		1836BFDE1743834700753063 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1836BFDD1743834700753063 /* Default.png */; };
+		1836BFE01743834700753063 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1836BFDF1743834700753063 /* Default@2x.png */; };
+		1836BFE21743834700753063 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1836BFE11743834700753063 /* Default-568h@2x.png */; };
+		1836BFE51743834700753063 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1836BFE31743834700753063 /* MainStoryboard.storyboard */; };
+		1836BFF01743834700753063 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1836BFEF1743834700753063 /* SenTestingKit.framework */; };
+		1836BFF11743834700753063 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1836BFCB1743834700753063 /* UIKit.framework */; };
+		1836BFF21743834700753063 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1836BFCD1743834700753063 /* Foundation.framework */; };
+		1836BFFA1743834800753063 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1836BFF81743834800753063 /* InfoPlist.strings */; };
+		1836C0071743858200753063 /* Snip20130515_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1836C0061743858200753063 /* Snip20130515_1.png */; };
+		1878C31A1743CFFC002AB6A9 /* Goody.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878C3191743CFFC002AB6A9 /* Goody.m */; };
+		1878C31B1743CFFC002AB6A9 /* Goody.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878C3191743CFFC002AB6A9 /* Goody.m */; };
+		1878C3211743D0FB002AB6A9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878C31F1743D0F7002AB6A9 /* CoreData.framework */; };
+		189DA2B71743939E008F4168 /* EVASpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DA2B61743939E008F4168 /* EVASpec.m */; };
+		189DA2BC1743AB2C008F4168 /* EVAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DA2BA1743AB2C008F4168 /* EVAAppDelegate.m */; };
+		189DA2C81743AC2E008F4168 /* EVAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DA2C71743AC2E008F4168 /* EVAHomeViewController.m */; };
+		189DA2F01743ACFC008F4168 /* 20-gear-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2CC1743ACFC008F4168 /* 20-gear-2.png */; };
+		189DA2F11743ACFC008F4168 /* 20-gear-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2CD1743ACFC008F4168 /* 20-gear-2@2x.png */; };
+		189DA2F21743ACFC008F4168 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2CE1743ACFC008F4168 /* background@2x.png */; };
+		189DA2F31743ACFC008F4168 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2CF1743ACFC008F4168 /* bar.png */; };
+		189DA2F41743ACFC008F4168 /* bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2D01743ACFC008F4168 /* bar@2x.png */; };
+		189DA2F51743ACFC008F4168 /* belle@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2D11743ACFC008F4168 /* belle@2x.jpg */; };
+		189DA2F61743ACFC008F4168 /* close-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2D21743ACFC008F4168 /* close-button.png */; };
+		189DA2F71743ACFC008F4168 /* close-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2D31743ACFC008F4168 /* close-button@2x.png */; };
+		189DA2F81743ACFC008F4168 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2D41743ACFC008F4168 /* compass.png */; };
+		189DA2F91743ACFC008F4168 /* compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2D51743ACFC008F4168 /* compass@2x.png */; };
+		189DA2FA1743ACFC008F4168 /* faq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2D61743ACFC008F4168 /* faq@2x.png */; };
+		189DA2FB1743ACFC008F4168 /* goods@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2D71743ACFC008F4168 /* goods@2x.png */; };
+		189DA2FC1743ACFC008F4168 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2D81743ACFC008F4168 /* home.png */; };
+		189DA2FD1743ACFC008F4168 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2D91743ACFC008F4168 /* home@2x.png */; };
+		189DA2FE1743ACFC008F4168 /* insure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2DA1743ACFC008F4168 /* insure@2x.png */; };
+		189DA2FF1743ACFC008F4168 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2DB1743ACFC008F4168 /* location.png */; };
+		189DA3001743ACFC008F4168 /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2DC1743ACFC008F4168 /* location@2x.png */; };
+		189DA3011743ACFC008F4168 /* my-center.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2DD1743ACFC008F4168 /* my-center.png */; };
+		189DA3021743ACFC008F4168 /* my-center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2DE1743ACFC008F4168 /* my-center@2x.png */; };
+		189DA3031743ACFC008F4168 /* notify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2DF1743ACFC008F4168 /* notify@2x.png */; };
+		189DA3041743ACFC008F4168 /* proxy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2E01743ACFC008F4168 /* proxy@2x.png */; };
+		189DA3051743ACFC008F4168 /* search-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2E11743ACFC008F4168 /* search-refresh.png */; };
+		189DA3061743ACFC008F4168 /* search-refresh01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2E21743ACFC008F4168 /* search-refresh01@2x.png */; };
+		189DA3071743ACFC008F4168 /* search-refresh02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2E31743ACFC008F4168 /* search-refresh02@2x.png */; };
+		189DA3081743ACFC008F4168 /* search-refresh03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2E41743ACFC008F4168 /* search-refresh03@2x.png */; };
+		189DA3091743ACFC008F4168 /* search-refresh04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2E51743ACFC008F4168 /* search-refresh04@2x.png */; };
+		189DA30A1743ACFC008F4168 /* search-refresh05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2E61743ACFC008F4168 /* search-refresh05@2x.png */; };
+		189DA30B1743ACFC008F4168 /* search-refresh06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2E71743ACFC008F4168 /* search-refresh06@2x.png */; };
+		189DA30C1743ACFC008F4168 /* search-refresh07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2E81743ACFC008F4168 /* search-refresh07@2x.png */; };
+		189DA30D1743ACFC008F4168 /* search-refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2E91743ACFC008F4168 /* search-refresh@2x.png */; };
+		189DA30E1743ACFC008F4168 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2EA1743ACFC008F4168 /* search.png */; };
+		189DA30F1743ACFC008F4168 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2EB1743ACFC008F4168 /* search@2x.png */; };
+		189DA3101743ACFC008F4168 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2EC1743ACFC008F4168 /* settings.png */; };
+		189DA3111743ACFC008F4168 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2ED1743ACFC008F4168 /* settings@2x.png */; };
+		189DA3121743ACFC008F4168 /* warm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2EE1743ACFC008F4168 /* warm@2x.png */; };
+		189DA3131743ACFC008F4168 /* wash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2EF1743ACFC008F4168 /* wash@2x.png */; };
+		189DA3151743AEE9008F4168 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DA3141743AEE9008F4168 /* CoreLocation.framework */; };
+		189DA3181743BD68008F4168 /* EVAHomeMenuViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DA3171743BD68008F4168 /* EVAHomeMenuViewCell.m */; };
+		189DA31B1743C9DA008F4168 /* EVA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 189DA3191743C9DA008F4168 /* EVA.xcdatamodeld */; };
+		189DA32B1743CECB008F4168 /* EVA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 189DA3191743C9DA008F4168 /* EVA.xcdatamodeld */; };
+		18D51A8C1744CB0500354735 /* EVAGoodyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D51A8B1744CB0500354735 /* EVAGoodyListViewController.m */; };
+		18D51A8D1744CB0500354735 /* EVAGoodyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D51A8B1744CB0500354735 /* EVAGoodyListViewController.m */; };
+		18D51A911744CCE000354735 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D51A901744CCE000354735 /* CoreDataTableViewController.m */; };
+		CEE3C625AD404376AC131421 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B62A12308C470D9B3C5E2C /* libPods.a */; };
+		EDF22AA30FBD414CB6926A9F /* libPods-EVATests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3A88D7E0DF45BAB93EF8C0 /* libPods-EVATests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1836BFF31743834700753063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1836BFC01743834700753063 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1836BFC71743834700753063;
+			remoteInfo = EVA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03963E9E59CF48A7B16B1A71 /* Pods-EVATests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVATests.xcconfig"; path = "Pods/Pods-EVATests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		18252B9817468A3300FDCB11 /* 480x150.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 480x150.jpg; sourceTree = "<group>"; };
+		1836BFC81743834700753063 /* EVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1836BFCB1743834700753063 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1836BFCD1743834700753063 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1836BFCF1743834700753063 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1836BFD31743834700753063 /* EVA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EVA-Info.plist"; sourceTree = "<group>"; };
+		1836BFD51743834700753063 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1836BFD71743834700753063 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1836BFD91743834700753063 /* EVA-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EVA-Prefix.pch"; sourceTree = "<group>"; };
+		1836BFDD1743834700753063 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1836BFDF1743834700753063 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1836BFE11743834700753063 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1836BFE41743834700753063 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1836BFEE1743834700753063 /* EVATests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVATests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1836BFEF1743834700753063 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1836BFF71743834800753063 /* EVATests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EVATests-Info.plist"; sourceTree = "<group>"; };
+		1836BFF91743834800753063 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1836C0061743858200753063 /* Snip20130515_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20130515_1.png; sourceTree = "<group>"; };
+		1878C3181743CFFC002AB6A9 /* Goody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Goody.h; path = EVA/app/models/Goody.h; sourceTree = SOURCE_ROOT; };
+		1878C3191743CFFC002AB6A9 /* Goody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Goody.m; path = EVA/app/models/Goody.m; sourceTree = SOURCE_ROOT; };
+		1878C31F1743D0F7002AB6A9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		189DA2B61743939E008F4168 /* EVASpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVASpec.m; sourceTree = "<group>"; };
+		189DA2B91743AB2C008F4168 /* EVAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EVAAppDelegate.h; path = app/EVAAppDelegate.h; sourceTree = "<group>"; };
+		189DA2BA1743AB2C008F4168 /* EVAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EVAAppDelegate.m; path = app/EVAAppDelegate.m; sourceTree = "<group>"; };
+		189DA2C61743AC2E008F4168 /* EVAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAHomeViewController.h; sourceTree = "<group>"; };
+		189DA2C71743AC2E008F4168 /* EVAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAHomeViewController.m; sourceTree = "<group>"; };
+		189DA2CC1743ACFC008F4168 /* 20-gear-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-gear-2.png"; sourceTree = "<group>"; };
+		189DA2CD1743ACFC008F4168 /* 20-gear-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-gear-2@2x.png"; sourceTree = "<group>"; };
+		189DA2CE1743ACFC008F4168 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		189DA2CF1743ACFC008F4168 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		189DA2D01743ACFC008F4168 /* bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar@2x.png"; sourceTree = "<group>"; };
+		189DA2D11743ACFC008F4168 /* belle@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "belle@2x.jpg"; sourceTree = "<group>"; };
+		189DA2D21743ACFC008F4168 /* close-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-button.png"; sourceTree = "<group>"; };
+		189DA2D31743ACFC008F4168 /* close-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-button@2x.png"; sourceTree = "<group>"; };
+		189DA2D41743ACFC008F4168 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
+		189DA2D51743ACFC008F4168 /* compass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass@2x.png"; sourceTree = "<group>"; };
+		189DA2D61743ACFC008F4168 /* faq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "faq@2x.png"; sourceTree = "<group>"; };
+		189DA2D71743ACFC008F4168 /* goods@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goods@2x.png"; sourceTree = "<group>"; };
+		189DA2D81743ACFC008F4168 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		189DA2D91743ACFC008F4168 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		189DA2DA1743ACFC008F4168 /* insure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "insure@2x.png"; sourceTree = "<group>"; };
+		189DA2DB1743ACFC008F4168 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		189DA2DC1743ACFC008F4168 /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
+		189DA2DD1743ACFC008F4168 /* my-center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-center.png"; sourceTree = "<group>"; };
+		189DA2DE1743ACFC008F4168 /* my-center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-center@2x.png"; sourceTree = "<group>"; };
+		189DA2DF1743ACFC008F4168 /* notify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notify@2x.png"; sourceTree = "<group>"; };
+		189DA2E01743ACFC008F4168 /* proxy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "proxy@2x.png"; sourceTree = "<group>"; };
+		189DA2E11743ACFC008F4168 /* search-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-refresh.png"; sourceTree = "<group>"; };
+		189DA2E21743ACFC008F4168 /* search-refresh01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-refresh01@2x.png"; sourceTree = "<group>"; };
+		189DA2E31743ACFC008F4168 /* search-refresh02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-refresh02@2x.png"; sourceTree = "<group>"; };
+		189DA2E41743ACFC008F4168 /* search-refresh03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-refresh03@2x.png"; sourceTree = "<group>"; };
+		189DA2E51743ACFC008F4168 /* search-refresh04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-refresh04@2x.png"; sourceTree = "<group>"; };
+		189DA2E61743ACFC008F4168 /* search-refresh05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-refresh05@2x.png"; sourceTree = "<group>"; };
+		189DA2E71743ACFC008F4168 /* search-refresh06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-refresh06@2x.png"; sourceTree = "<group>"; };
+		189DA2E81743ACFC008F4168 /* search-refresh07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-refresh07@2x.png"; sourceTree = "<group>"; };
+		189DA2E91743ACFC008F4168 /* search-refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-refresh@2x.png"; sourceTree = "<group>"; };
+		189DA2EA1743ACFC008F4168 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		189DA2EB1743ACFC008F4168 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		189DA2EC1743ACFC008F4168 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		189DA2ED1743ACFC008F4168 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		189DA2EE1743ACFC008F4168 /* warm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warm@2x.png"; sourceTree = "<group>"; };
+		189DA2EF1743ACFC008F4168 /* wash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wash@2x.png"; sourceTree = "<group>"; };
+		189DA3141743AEE9008F4168 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		189DA3161743BD68008F4168 /* EVAHomeMenuViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAHomeMenuViewCell.h; sourceTree = "<group>"; };
+		189DA3171743BD68008F4168 /* EVAHomeMenuViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAHomeMenuViewCell.m; sourceTree = "<group>"; };
+		189DA31A1743C9DA008F4168 /* EVA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EVA.xcdatamodel; sourceTree = "<group>"; };
+		18D51A8A1744CB0500354735 /* EVAGoodyListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAGoodyListViewController.h; sourceTree = "<group>"; };
+		18D51A8B1744CB0500354735 /* EVAGoodyListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAGoodyListViewController.m; sourceTree = "<group>"; };
+		18D51A8F1744CCE000354735 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		18D51A901744CCE000354735 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		80B62A12308C470D9B3C5E2C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C7891973C54485A315FE15 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		AC3A88D7E0DF45BAB93EF8C0 /* libPods-EVATests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EVATests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1836BFC51743834700753063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189DA3151743AEE9008F4168 /* CoreLocation.framework in Frameworks */,
+				1836BFCC1743834700753063 /* UIKit.framework in Frameworks */,
+				1836BFCE1743834700753063 /* Foundation.framework in Frameworks */,
+				1836BFD01743834700753063 /* CoreGraphics.framework in Frameworks */,
+				CEE3C625AD404376AC131421 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1836BFEA1743834700753063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18252B971746655B00FDCB11 /* CoreGraphics.framework in Frameworks */,
+				1836BFF01743834700753063 /* SenTestingKit.framework in Frameworks */,
+				1836BFF11743834700753063 /* UIKit.framework in Frameworks */,
+				1836BFF21743834700753063 /* Foundation.framework in Frameworks */,
+				EDF22AA30FBD414CB6926A9F /* libPods-EVATests.a in Frameworks */,
+				1878C3211743D0FB002AB6A9 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1836BFBF1743834700753063 = {
+			isa = PBXGroup;
+			children = (
+				1836C0061743858200753063 /* Snip20130515_1.png */,
+				1836BFD11743834700753063 /* EVA */,
+				1836BFF51743834700753063 /* EVATests */,
+				1836BFCA1743834700753063 /* Frameworks */,
+				1836BFC91743834700753063 /* Products */,
+				81C7891973C54485A315FE15 /* Pods.xcconfig */,
+				03963E9E59CF48A7B16B1A71 /* Pods-EVATests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		1836BFC91743834700753063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1836BFC81743834700753063 /* EVA.app */,
+				1836BFEE1743834700753063 /* EVATests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1836BFCA1743834700753063 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1878C31F1743D0F7002AB6A9 /* CoreData.framework */,
+				189DA3141743AEE9008F4168 /* CoreLocation.framework */,
+				1836BFCB1743834700753063 /* UIKit.framework */,
+				1836BFCD1743834700753063 /* Foundation.framework */,
+				1836BFCF1743834700753063 /* CoreGraphics.framework */,
+				1836BFEF1743834700753063 /* SenTestingKit.framework */,
+				80B62A12308C470D9B3C5E2C /* libPods.a */,
+				AC3A88D7E0DF45BAB93EF8C0 /* libPods-EVATests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1836BFD11743834700753063 /* EVA */ = {
+			isa = PBXGroup;
+			children = (
+				189DA2B91743AB2C008F4168 /* EVAAppDelegate.h */,
+				189DA2BA1743AB2C008F4168 /* EVAAppDelegate.m */,
+				18D51A8E1744CCE000354735 /* helpers */,
+				189DA2CB1743ACFC008F4168 /* assets */,
+				189DA2B81743AB2C008F4168 /* app */,
+				1836BFD21743834700753063 /* Supporting Files */,
+			);
+			path = EVA;
+			sourceTree = "<group>";
+		};
+		1836BFD21743834700753063 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1836BFD31743834700753063 /* EVA-Info.plist */,
+				1836BFD41743834700753063 /* InfoPlist.strings */,
+				1836BFD71743834700753063 /* main.m */,
+				1836BFD91743834700753063 /* EVA-Prefix.pch */,
+				1836BFDD1743834700753063 /* Default.png */,
+				1836BFDF1743834700753063 /* Default@2x.png */,
+				1836BFE11743834700753063 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1836BFF51743834700753063 /* EVATests */ = {
+			isa = PBXGroup;
+			children = (
+				189DA2B61743939E008F4168 /* EVASpec.m */,
+				1836BFF61743834800753063 /* Supporting Files */,
+			);
+			path = EVATests;
+			sourceTree = "<group>";
+		};
+		1836BFF61743834800753063 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1836BFF71743834800753063 /* EVATests-Info.plist */,
+				1836BFF81743834800753063 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		189DA2B81743AB2C008F4168 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				189DA2BD1743AB8B008F4168 /* controllers */,
+				189DA2BF1743AB8B008F4168 /* models */,
+				189DA2C01743AB8B008F4168 /* views */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		189DA2BD1743AB8B008F4168 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18D51A891744CAE100354735 /* goody */,
+				189DA2C51743AC2E008F4168 /* home */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		189DA2BF1743AB8B008F4168 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				189DA31C1743CAB4008F4168 /* goody */,
+				189DA3191743C9DA008F4168 /* EVA.xcdatamodeld */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		189DA2C01743AB8B008F4168 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				189DA2CA1743AC73008F4168 /* home */,
+				1836BFE31743834700753063 /* MainStoryboard.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		189DA2C51743AC2E008F4168 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				189DA2C61743AC2E008F4168 /* EVAHomeViewController.h */,
+				189DA2C71743AC2E008F4168 /* EVAHomeViewController.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		189DA2CA1743AC73008F4168 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				189DA3161743BD68008F4168 /* EVAHomeMenuViewCell.h */,
+				189DA3171743BD68008F4168 /* EVAHomeMenuViewCell.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		189DA2CB1743ACFC008F4168 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				18252B9817468A3300FDCB11 /* 480x150.jpg */,
+				189DA2CC1743ACFC008F4168 /* 20-gear-2.png */,
+				189DA2CD1743ACFC008F4168 /* 20-gear-2@2x.png */,
+				189DA2CE1743ACFC008F4168 /* background@2x.png */,
+				189DA2CF1743ACFC008F4168 /* bar.png */,
+				189DA2D01743ACFC008F4168 /* bar@2x.png */,
+				189DA2D11743ACFC008F4168 /* belle@2x.jpg */,
+				189DA2D21743ACFC008F4168 /* close-button.png */,
+				189DA2D31743ACFC008F4168 /* close-button@2x.png */,
+				189DA2D41743ACFC008F4168 /* compass.png */,
+				189DA2D51743ACFC008F4168 /* compass@2x.png */,
+				189DA2D61743ACFC008F4168 /* faq@2x.png */,
+				189DA2D71743ACFC008F4168 /* goods@2x.png */,
+				189DA2D81743ACFC008F4168 /* home.png */,
+				189DA2D91743ACFC008F4168 /* home@2x.png */,
+				189DA2DA1743ACFC008F4168 /* insure@2x.png */,
+				189DA2DB1743ACFC008F4168 /* location.png */,
+				189DA2DC1743ACFC008F4168 /* location@2x.png */,
+				189DA2DD1743ACFC008F4168 /* my-center.png */,
+				189DA2DE1743ACFC008F4168 /* my-center@2x.png */,
+				189DA2DF1743ACFC008F4168 /* notify@2x.png */,
+				189DA2E01743ACFC008F4168 /* proxy@2x.png */,
+				189DA2E11743ACFC008F4168 /* search-refresh.png */,
+				189DA2E21743ACFC008F4168 /* search-refresh01@2x.png */,
+				189DA2E31743ACFC008F4168 /* search-refresh02@2x.png */,
+				189DA2E41743ACFC008F4168 /* search-refresh03@2x.png */,
+				189DA2E51743ACFC008F4168 /* search-refresh04@2x.png */,
+				189DA2E61743ACFC008F4168 /* search-refresh05@2x.png */,
+				189DA2E71743ACFC008F4168 /* search-refresh06@2x.png */,
+				189DA2E81743ACFC008F4168 /* search-refresh07@2x.png */,
+				189DA2E91743ACFC008F4168 /* search-refresh@2x.png */,
+				189DA2EA1743ACFC008F4168 /* search.png */,
+				189DA2EB1743ACFC008F4168 /* search@2x.png */,
+				189DA2EC1743ACFC008F4168 /* settings.png */,
+				189DA2ED1743ACFC008F4168 /* settings@2x.png */,
+				189DA2EE1743ACFC008F4168 /* warm@2x.png */,
+				189DA2EF1743ACFC008F4168 /* wash@2x.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		189DA31C1743CAB4008F4168 /* goody */ = {
+			isa = PBXGroup;
+			children = (
+				1878C3181743CFFC002AB6A9 /* Goody.h */,
+				1878C3191743CFFC002AB6A9 /* Goody.m */,
+			);
+			path = goody;
+			sourceTree = "<group>";
+		};
+		18D51A891744CAE100354735 /* goody */ = {
+			isa = PBXGroup;
+			children = (
+				18D51A8A1744CB0500354735 /* EVAGoodyListViewController.h */,
+				18D51A8B1744CB0500354735 /* EVAGoodyListViewController.m */,
+			);
+			path = goody;
+			sourceTree = "<group>";
+		};
+		18D51A8E1744CCE000354735 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18D51A8F1744CCE000354735 /* CoreDataTableViewController.h */,
+				18D51A901744CCE000354735 /* CoreDataTableViewController.m */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1836BFC71743834700753063 /* EVA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1836C0001743834800753063 /* Build configuration list for PBXNativeTarget "EVA" */;
+			buildPhases = (
+				B8C35AE8C0B94F3285D231F0 /* Check Pods Manifest.lock */,
+				1836BFC41743834700753063 /* Sources */,
+				1836BFC51743834700753063 /* Frameworks */,
+				1836BFC61743834700753063 /* Resources */,
+				971539B52E614270BCE7FA0D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EVA;
+			productName = EVA;
+			productReference = 1836BFC81743834700753063 /* EVA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1836BFED1743834700753063 /* EVATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1836C0031743834800753063 /* Build configuration list for PBXNativeTarget "EVATests" */;
+			buildPhases = (
+				3ECF049CCECD4D79A9B779C4 /* Check Pods Manifest.lock */,
+				1836BFE91743834700753063 /* Sources */,
+				1836BFEA1743834700753063 /* Frameworks */,
+				1836BFEB1743834700753063 /* Resources */,
+				1836BFEC1743834700753063 /* ShellScript */,
+				BBDEB81FD31F4FB1B268287A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1836BFF41743834700753063 /* PBXTargetDependency */,
+			);
+			name = EVATests;
+			productName = EVATests;
+			productReference = 1836BFEE1743834700753063 /* EVATests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1836BFC01743834700753063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EVA;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = 365iCar;
+			};
+			buildConfigurationList = 1836BFC31743834700753063 /* Build configuration list for PBXProject "EVA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1836BFBF1743834700753063;
+			productRefGroup = 1836BFC91743834700753063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1836BFC71743834700753063 /* EVA */,
+				1836BFED1743834700753063 /* EVATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1836BFC61743834700753063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1836BFD61743834700753063 /* InfoPlist.strings in Resources */,
+				1836BFDE1743834700753063 /* Default.png in Resources */,
+				1836BFE01743834700753063 /* Default@2x.png in Resources */,
+				1836BFE21743834700753063 /* Default-568h@2x.png in Resources */,
+				1836BFE51743834700753063 /* MainStoryboard.storyboard in Resources */,
+				1836C0071743858200753063 /* Snip20130515_1.png in Resources */,
+				189DA2F01743ACFC008F4168 /* 20-gear-2.png in Resources */,
+				189DA2F11743ACFC008F4168 /* 20-gear-2@2x.png in Resources */,
+				189DA2F21743ACFC008F4168 /* background@2x.png in Resources */,
+				189DA2F31743ACFC008F4168 /* bar.png in Resources */,
+				189DA2F41743ACFC008F4168 /* bar@2x.png in Resources */,
+				189DA2F51743ACFC008F4168 /* belle@2x.jpg in Resources */,
+				189DA2F61743ACFC008F4168 /* close-button.png in Resources */,
+				189DA2F71743ACFC008F4168 /* close-button@2x.png in Resources */,
+				189DA2F81743ACFC008F4168 /* compass.png in Resources */,
+				189DA2F91743ACFC008F4168 /* compass@2x.png in Resources */,
+				189DA2FA1743ACFC008F4168 /* faq@2x.png in Resources */,
+				189DA2FB1743ACFC008F4168 /* goods@2x.png in Resources */,
+				189DA2FC1743ACFC008F4168 /* home.png in Resources */,
+				189DA2FD1743ACFC008F4168 /* home@2x.png in Resources */,
+				189DA2FE1743ACFC008F4168 /* insure@2x.png in Resources */,
+				189DA2FF1743ACFC008F4168 /* location.png in Resources */,
+				189DA3001743ACFC008F4168 /* location@2x.png in Resources */,
+				189DA3011743ACFC008F4168 /* my-center.png in Resources */,
+				189DA3021743ACFC008F4168 /* my-center@2x.png in Resources */,
+				189DA3031743ACFC008F4168 /* notify@2x.png in Resources */,
+				189DA3041743ACFC008F4168 /* proxy@2x.png in Resources */,
+				189DA3051743ACFC008F4168 /* search-refresh.png in Resources */,
+				189DA3061743ACFC008F4168 /* search-refresh01@2x.png in Resources */,
+				189DA3071743ACFC008F4168 /* search-refresh02@2x.png in Resources */,
+				189DA3081743ACFC008F4168 /* search-refresh03@2x.png in Resources */,
+				189DA3091743ACFC008F4168 /* search-refresh04@2x.png in Resources */,
+				189DA30A1743ACFC008F4168 /* search-refresh05@2x.png in Resources */,
+				189DA30B1743ACFC008F4168 /* search-refresh06@2x.png in Resources */,
+				189DA30C1743ACFC008F4168 /* search-refresh07@2x.png in Resources */,
+				189DA30D1743ACFC008F4168 /* search-refresh@2x.png in Resources */,
+				189DA30E1743ACFC008F4168 /* search.png in Resources */,
+				189DA30F1743ACFC008F4168 /* search@2x.png in Resources */,
+				189DA3101743ACFC008F4168 /* settings.png in Resources */,
+				189DA3111743ACFC008F4168 /* settings@2x.png in Resources */,
+				189DA3121743ACFC008F4168 /* warm@2x.png in Resources */,
+				189DA3131743ACFC008F4168 /* wash@2x.png in Resources */,
+				18252B9917468A3300FDCB11 /* 480x150.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1836BFEB1743834700753063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1836BFFA1743834800753063 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1836BFEC1743834700753063 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		3ECF049CCECD4D79A9B779C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		971539B52E614270BCE7FA0D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		B8C35AE8C0B94F3285D231F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		BBDEB81FD31F4FB1B268287A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-EVATests-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1836BFC41743834700753063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1836BFD81743834700753063 /* main.m in Sources */,
+				189DA2BC1743AB2C008F4168 /* EVAAppDelegate.m in Sources */,
+				189DA2C81743AC2E008F4168 /* EVAHomeViewController.m in Sources */,
+				189DA3181743BD68008F4168 /* EVAHomeMenuViewCell.m in Sources */,
+				189DA31B1743C9DA008F4168 /* EVA.xcdatamodeld in Sources */,
+				1878C31A1743CFFC002AB6A9 /* Goody.m in Sources */,
+				18D51A8C1744CB0500354735 /* EVAGoodyListViewController.m in Sources */,
+				18D51A911744CCE000354735 /* CoreDataTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1836BFE91743834700753063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189DA2B71743939E008F4168 /* EVASpec.m in Sources */,
+				189DA32B1743CECB008F4168 /* EVA.xcdatamodeld in Sources */,
+				1878C31B1743CFFC002AB6A9 /* Goody.m in Sources */,
+				18D51A8D1744CB0500354735 /* EVAGoodyListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1836BFF41743834700753063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1836BFC71743834700753063 /* EVA */;
+			targetProxy = 1836BFF31743834700753063 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1836BFD41743834700753063 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1836BFD51743834700753063 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1836BFE31743834700753063 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1836BFE41743834700753063 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1836BFF81743834800753063 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1836BFF91743834800753063 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1836BFFE1743834800753063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1836BFFF1743834800753063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1836C0011743834800753063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C7891973C54485A315FE15 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EVA/EVA-Prefix.pch";
+				INFOPLIST_FILE = "EVA/EVA-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1836C0021743834800753063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C7891973C54485A315FE15 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EVA/EVA-Prefix.pch";
+				INFOPLIST_FILE = "EVA/EVA-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1836C0041743834800753063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03963E9E59CF48A7B16B1A71 /* Pods-EVATests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EVA.app/EVA";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EVA/EVA-Prefix.pch";
+				INFOPLIST_FILE = "EVATests/EVATests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1836C0051743834800753063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03963E9E59CF48A7B16B1A71 /* Pods-EVATests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EVA.app/EVA";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EVA/EVA-Prefix.pch";
+				INFOPLIST_FILE = "EVATests/EVATests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1836BFC31743834700753063 /* Build configuration list for PBXProject "EVA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1836BFFE1743834800753063 /* Debug */,
+				1836BFFF1743834800753063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1836C0001743834800753063 /* Build configuration list for PBXNativeTarget "EVA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1836C0011743834800753063 /* Debug */,
+				1836C0021743834800753063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1836C0031743834800753063 /* Build configuration list for PBXNativeTarget "EVATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1836C0041743834800753063 /* Debug */,
+				1836C0051743834800753063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		189DA3191743C9DA008F4168 /* EVA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				189DA31A1743C9DA008F4168 /* EVA.xcdatamodel */,
+			);
+			currentVersion = 189DA31A1743C9DA008F4168 /* EVA.xcdatamodel */;
+			path = EVA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1836BFC01743834700753063 /* Project object */;
+}
