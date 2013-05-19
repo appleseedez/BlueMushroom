@@ -3,7 +3,7 @@
 #import "Goody.h"
 #import "EVAHomeViewController.h"
 #import "EVAGoodyListViewController.h"
-SPEC_BEGIN(EVASpec)
+SPEC_BEGIN(HomeSpec)
 	describe(@"测试启动完成后", ^{
 		beforeAll(^{
 			//

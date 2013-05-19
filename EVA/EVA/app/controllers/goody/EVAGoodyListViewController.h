@@ -1,13 +1,12 @@
-//
-//  EVAGoodyListViewController.h
-//  EVA
-//
-//  Created by Pharaoh on 13-5-16.
-//  Copyright (c) 2013年 365iCar. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
-@interface EVAGoodyListViewController : CoreDataTableViewController
+@interface EVAGoodyListViewController : CoreDataTableViewController<CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *refreshBtn;
+- (IBAction)closeListModal:(UIButton*)closeBtn;// 关闭当前页
+- (IBAction)toggleFilter:(UIButton*)titleBtn;// 显示/隐藏筛选条件
+- (IBAction)reloadList:(UIButton*)refreshBtn; // 刷新列表
+
+
 
 @end

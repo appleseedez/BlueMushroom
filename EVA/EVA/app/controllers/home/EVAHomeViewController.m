@@ -1,10 +1,3 @@
-//
-//  EVAHomeViewController.m
-//  EVA
-//
-//  Created by Pharaoh on 13-5-15.
-//  Copyright (c) 2013年 365iCar. All rights reserved.
-//
 
 #import "EVAHomeViewController.h"
 #import "EVAHomeMenuViewCell.h"

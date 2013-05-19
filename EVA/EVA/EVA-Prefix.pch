@@ -13,6 +13,7 @@
 	#import <Foundation/Foundation.h>
 	#import<CoreData/CoreData.h>
 	#import <CoreLocation/CoreLocation.h>
+	#import <QuartzCore/QuartzCore.h>
 #endif
 
 
@@ -25,3 +26,5 @@
 #endif
 #import <RestKit/RestKit.h>
 #import "CoreDataTableViewController.h"
+#import "EVAGenericCell.h"
+#import "UIImageView+ImageUtil.h"

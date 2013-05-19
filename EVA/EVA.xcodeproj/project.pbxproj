@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180C249417476EB3004320C5 /* GoodyViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180C249317476EB3004320C5 /* GoodyViews.storyboard */; };
+		180C249717476FDC004320C5 /* EVAGoodyListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C249617476FDC004320C5 /* EVAGoodyListCell.m */; };
+		180C249A1747703F004320C5 /* EVAGenericCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C24991747703F004320C5 /* EVAGenericCell.m */; };
+		180C249C17477074004320C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C249B17477074004320C5 /* QuartzCore.framework */; };
+		180C249F17477142004320C5 /* UIImageView+ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C249E17477142004320C5 /* UIImageView+ImageUtil.m */; };
+		180C24A1174781B9004320C5 /* GoodySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C24A0174781B9004320C5 /* GoodySpec.m */; };
 		18252B971746655B00FDCB11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1836BFCF1743834700753063 /* CoreGraphics.framework */; };
 		18252B9917468A3300FDCB11 /* 480x150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18252B9817468A3300FDCB11 /* 480x150.jpg */; };
 		1836BFCC1743834700753063 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1836BFCB1743834700753063 /* UIKit.framework */; };
@@ -26,7 +32,7 @@
 		1878C31A1743CFFC002AB6A9 /* Goody.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878C3191743CFFC002AB6A9 /* Goody.m */; };
 		1878C31B1743CFFC002AB6A9 /* Goody.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878C3191743CFFC002AB6A9 /* Goody.m */; };
 		1878C3211743D0FB002AB6A9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878C31F1743D0F7002AB6A9 /* CoreData.framework */; };
-		189DA2B71743939E008F4168 /* EVASpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DA2B61743939E008F4168 /* EVASpec.m */; };
+		189DA2B71743939E008F4168 /* HomeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DA2B61743939E008F4168 /* HomeSpec.m */; };
 		189DA2BC1743AB2C008F4168 /* EVAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DA2BA1743AB2C008F4168 /* EVAAppDelegate.m */; };
 		189DA2C81743AC2E008F4168 /* EVAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DA2C71743AC2E008F4168 /* EVAHomeViewController.m */; };
 		189DA2F01743ACFC008F4168 /* 20-gear-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 189DA2CC1743ACFC008F4168 /* 20-gear-2.png */; };
@@ -88,6 +94,15 @@
 
 /* Begin PBXFileReference section */
 		03963E9E59CF48A7B16B1A71 /* Pods-EVATests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVATests.xcconfig"; path = "Pods/Pods-EVATests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		180C249317476EB3004320C5 /* GoodyViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GoodyViews.storyboard; sourceTree = "<group>"; };
+		180C249517476FDC004320C5 /* EVAGoodyListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAGoodyListCell.h; sourceTree = "<group>"; };
+		180C249617476FDC004320C5 /* EVAGoodyListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAGoodyListCell.m; sourceTree = "<group>"; };
+		180C24981747703F004320C5 /* EVAGenericCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAGenericCell.h; sourceTree = "<group>"; };
+		180C24991747703F004320C5 /* EVAGenericCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAGenericCell.m; sourceTree = "<group>"; };
+		180C249B17477074004320C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		180C249D17477142004320C5 /* UIImageView+ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImageUtil.h"; sourceTree = "<group>"; };
+		180C249E17477142004320C5 /* UIImageView+ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ImageUtil.m"; sourceTree = "<group>"; };
+		180C24A0174781B9004320C5 /* GoodySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodySpec.m; sourceTree = "<group>"; };
 		18252B9817468A3300FDCB11 /* 480x150.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 480x150.jpg; sourceTree = "<group>"; };
 		1836BFC81743834700753063 /* EVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1836BFCB1743834700753063 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -109,7 +124,7 @@
 		1878C3181743CFFC002AB6A9 /* Goody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Goody.h; path = EVA/app/models/Goody.h; sourceTree = SOURCE_ROOT; };
 		1878C3191743CFFC002AB6A9 /* Goody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Goody.m; path = EVA/app/models/Goody.m; sourceTree = SOURCE_ROOT; };
 		1878C31F1743D0F7002AB6A9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		189DA2B61743939E008F4168 /* EVASpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVASpec.m; sourceTree = "<group>"; };
+		189DA2B61743939E008F4168 /* HomeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSpec.m; sourceTree = "<group>"; };
 		189DA2B91743AB2C008F4168 /* EVAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EVAAppDelegate.h; path = app/EVAAppDelegate.h; sourceTree = "<group>"; };
 		189DA2BA1743AB2C008F4168 /* EVAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EVAAppDelegate.m; path = app/EVAAppDelegate.m; sourceTree = "<group>"; };
 		189DA2C61743AC2E008F4168 /* EVAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAHomeViewController.h; sourceTree = "<group>"; };
@@ -168,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180C249C17477074004320C5 /* QuartzCore.framework in Frameworks */,
 				189DA3151743AEE9008F4168 /* CoreLocation.framework in Frameworks */,
 				1836BFCC1743834700753063 /* UIKit.framework in Frameworks */,
 				1836BFCE1743834700753063 /* Foundation.framework in Frameworks */,
@@ -192,6 +208,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180C249217476E23004320C5 /* goody */ = {
+			isa = PBXGroup;
+			children = (
+				180C249517476FDC004320C5 /* EVAGoodyListCell.h */,
+				180C249617476FDC004320C5 /* EVAGoodyListCell.m */,
+				180C249317476EB3004320C5 /* GoodyViews.storyboard */,
+			);
+			path = goody;
+			sourceTree = "<group>";
+		};
 		1836BFBF1743834700753063 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +243,7 @@
 		1836BFCA1743834700753063 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				180C249B17477074004320C5 /* QuartzCore.framework */,
 				1878C31F1743D0F7002AB6A9 /* CoreData.framework */,
 				189DA3141743AEE9008F4168 /* CoreLocation.framework */,
 				1836BFCB1743834700753063 /* UIKit.framework */,
@@ -259,8 +286,9 @@
 		1836BFF51743834700753063 /* EVATests */ = {
 			isa = PBXGroup;
 			children = (
-				189DA2B61743939E008F4168 /* EVASpec.m */,
+				189DA2B61743939E008F4168 /* HomeSpec.m */,
 				1836BFF61743834800753063 /* Supporting Files */,
+				180C24A0174781B9004320C5 /* GoodySpec.m */,
 			);
 			path = EVATests;
 			sourceTree = "<group>";
@@ -305,6 +333,7 @@
 		189DA2C01743AB8B008F4168 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				180C249217476E23004320C5 /* goody */,
 				189DA2CA1743AC73008F4168 /* home */,
 				1836BFE31743834700753063 /* MainStoryboard.storyboard */,
 			);
@@ -394,6 +423,10 @@
 		18D51A8E1744CCE000354735 /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				180C249D17477142004320C5 /* UIImageView+ImageUtil.h */,
+				180C249E17477142004320C5 /* UIImageView+ImageUtil.m */,
+				180C24981747703F004320C5 /* EVAGenericCell.h */,
+				180C24991747703F004320C5 /* EVAGenericCell.m */,
 				18D51A8F1744CCE000354735 /* CoreDataTableViewController.h */,
 				18D51A901744CCE000354735 /* CoreDataTableViewController.m */,
 			);
@@ -519,6 +552,7 @@
 				189DA3121743ACFC008F4168 /* warm@2x.png in Resources */,
 				189DA3131743ACFC008F4168 /* wash@2x.png in Resources */,
 				18252B9917468A3300FDCB11 /* 480x150.jpg in Resources */,
+				180C249417476EB3004320C5 /* GoodyViews.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +651,9 @@
 				1878C31A1743CFFC002AB6A9 /* Goody.m in Sources */,
 				18D51A8C1744CB0500354735 /* EVAGoodyListViewController.m in Sources */,
 				18D51A911744CCE000354735 /* CoreDataTableViewController.m in Sources */,
+				180C249717476FDC004320C5 /* EVAGoodyListCell.m in Sources */,
+				180C249A1747703F004320C5 /* EVAGenericCell.m in Sources */,
+				180C249F17477142004320C5 /* UIImageView+ImageUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,10 +661,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189DA2B71743939E008F4168 /* EVASpec.m in Sources */,
+				189DA2B71743939E008F4168 /* HomeSpec.m in Sources */,
 				189DA32B1743CECB008F4168 /* EVA.xcdatamodeld in Sources */,
 				1878C31B1743CFFC002AB6A9 /* Goody.m in Sources */,
 				18D51A8D1744CB0500354735 /* EVAGoodyListViewController.m in Sources */,
+				180C24A1174781B9004320C5 /* GoodySpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
