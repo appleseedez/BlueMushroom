@@ -1,6 +1,7 @@
 
 #import "Kiwi.h"
 #import "Goody.h"
+#import <RestKit/Testing.h>
 #import "EVAHomeViewController.h"
 #import "EVAGoodyListViewController.h"
 SPEC_BEGIN(HomeSpec)
@@ -27,15 +28,19 @@ SPEC_BEGIN(HomeSpec)
 		it(@"保存goody数据", ^{
 			NSError* saveError = nil;
 			NSError* fetchError = nil;
-			NSManagedObjectContext* context = [[RKManagedObjectStore defaultStore] mainQueueManagedObjectContext];
-			Goody* goody = [NSEntityDescription insertNewObjectForEntityForName:@"Goody" inManagedObjectContext:context];
-			goody.name= @"邓丽君";
+            RKManagedObjectStore* testStore = [RKTestFactory managedObjectStore];
+			NSManagedObjectContext* context = [testStore mainQueueManagedObjectContext];
+			Goody* goody1 = [NSEntityDescription insertNewObjectForEntityForName:@"Goody" inManagedObjectContext:context];
+			goody1.name= @"邓丽君";
+            goody1.price =  [[NSDecimalNumber alloc] initWithFloat:1000.0f];
+            Goody* goody2 = [NSEntityDescription insertNewObjectForEntityForName:@"Goody" inManagedObjectContext:context];
+			goody2.name= @"density";
 			BOOL saveSuccess = [context save:&saveError];
 			[[theValue(saveSuccess) should] beYes];
 			NSFetchRequest* request = [[NSFetchRequest alloc] initWithEntityName:@"Goody"];
 			NSArray* matches = [context executeFetchRequest:request error:&fetchError];
 			NSInteger count = [matches count];
-			[[theValue(count==1) should] beYes];
+			[[theValue(count==2) should] beYes];
 		});
 	});
 	describe(@"测试首页功能", ^{
@@ -177,21 +182,18 @@ SPEC_BEGIN(HomeSpec)
 			[advertiseScrollView.delegate scrollViewDidEndDecelerating:advertiseScrollView];
 			[[theValue(mostRightView.tag == (mostLeftView.tag-1+totalPages)%totalPages) should] beYes];
 		});
+        it(@"Location 获取", ^{
+//            无法被测试.
+//            [[[EVALocationMonitor shared] locationManager ] startUpdatingLocation];
+//            [[[EVALocationMonitor shared] shouldEventually] receive:@selector(locationManager:didUpdateLocations:)];
+//            [[[[EVALocationMonitor shared ] currentLocation] shouldEventuallyBeforeTimingOutAfter(15)] shouldNotBeNil];
+        });
 		afterAll(^{
 			homeViewController = nil;
 			advertiseScrollView = nil;
 			advertisePageControl = nil;
 		});
 	});
-    describe(@"测试goody数据列表", ^{
-		beforeAll(^{
-		});
-        it(@"获取到了新的位置", ^{
-//			EVAGoodyListViewController* listController = [[EVAGoodyListViewController alloc] init];
-//			[listController viewDidLoad];
-			
-		});
-    });
 
 
 

@@ -1,6 +1,7 @@
 
 #import "EVAHomeViewController.h"
 #import "EVAHomeMenuViewCell.h"
+#import "Goody+CRUD.h"
 @interface EVAHomeViewController ()
 @property(nonatomic) NSArray* menuDataSource;
 @property(nonatomic) NSArray* advertiseScrollViewDataSource;
@@ -13,13 +14,22 @@
     [super viewDidLoad];
 	[self setup];
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[[EVALocationMonitor shared] locationManager] startUpdatingLocation];
+}
+- (void)dealloc{
+    [self tearDown];
+}
 - (void) setup{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLocation) name:LOCATION_CHANGE_NOTIFICATION object:nil]; 
 	[self setupMenu];
 	[self setupPageControl];
 	[self setupScrollView];
 }
-
+- (void)tearDown {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:LOCATION_CHANGE_NOTIFICATION object:nil];
+}
 // 九宫格按钮菜单
 - (void) setupMenu {
 	self.menuDataSource = @[@{@"title":@"汽车服务",@"icon":@"goods"},@{@"title":@"养护咨询",@"icon":@"faq"},
@@ -152,7 +162,7 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 	if (indexPath.row == 0) {
 		// 加载服务列表
-//		[self presentViewController:[[UIStoryboard storyboardWithName:@"GoodyListView" bundle:nil] instantiateInitialViewController] animated:YES completion:nil];
+		[self presentViewController:[[UIStoryboard storyboardWithName:@"GoodyViews" bundle:nil] instantiateInitialViewController] animated:YES completion:nil];
 	}
 	if (indexPath.row == 1) {
 		/// 供测试. 目前加载的是商品详情页
@@ -161,10 +171,41 @@
 }
 
 #pragma mark - 自定义的方法们
+- (void) updateLocation{
+    [[[EVALocationMonitor shared] locationManager] stopUpdatingLocation];
+    [self loadGoodies];
+}
 - (void)renderCell:(EVAHomeMenuViewCell *)cell AtIndexPath:(NSIndexPath *)indexPath {
 	// 首页按钮的文字和icon
     cell.iconImageView.image  = [UIImage imageNamed:[self.menuDataSource[indexPath.row] valueForKey:@"icon"]];
 	cell.menuTitleLabel.text = [self.menuDataSource[indexPath.row] valueForKey:@"title"];
 }
-
+- (void) loadGoodies{
+    [[RKObjectManager sharedManager] getObjectsAtPath:@"services"
+                                           parameters:@{@"apiKey": @"1gdxdp157X9xPkkGHFsH4MYBWWYaS37o"}
+                                              success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult)
+     {
+         [self updateDistance];
+     }
+                                              failure:^(RKObjectRequestOperation *operation, NSError *error)
+     {
+     }];
+}
+/*
+ 根据用户当前位置对core data数据的distance进行刷新
+ */
+-(void) updateDistance{
+	dispatch_queue_t updateDistanceQueue= dispatch_queue_create("Update the distance data", NULL);
+	dispatch_async(updateDistanceQueue, ^{
+		// 查找所有范围内的goody 更新其距离当前位置的值
+		[Goody updateDistanceWithCurrentLocation:[[EVALocationMonitor shared] currentLocation]
+									lastLocation:[[EVALocationMonitor shared] lastLocation]
+										   range:10.0
+									   inContext:[RKManagedObjectStore defaultStore].mainQueueManagedObjectContext];
+		// 更新操作进行完成, 再初始化界面
+		dispatch_async(dispatch_get_main_queue(), ^{
+		});
+		
+	});
+}
 @end

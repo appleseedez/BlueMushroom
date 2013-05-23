@@ -22,7 +22,7 @@
         <!--Goody List View Controller-->
         <scene sceneID="bFs-Fs-3So">
             <objects>
-                <tableViewController id="gdM-6s-4MR" customClass="EVAGoodyListViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="goody list" id="gdM-6s-4MR" customClass="EVAGoodyListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HVO-A3-uKv">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,35 +169,6 @@
         <image name="home" width="16" height="16"/>
         <image name="search-refresh" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="CoreDataTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoreDataTableViewController.h"/>
-        </class>
-        <class className="EVAGenericCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EVAGenericCell.h"/>
-        </class>
-        <class className="EVAGoodyListCell" superclassName="EVAGenericCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EVAGoodyListCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="goodyAddressLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="goodyDistanceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="goodyNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="goodyPriceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="goodyScoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="goodyThumbnailView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="goodyTimeIntervalSinceNowLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="EVAGoodyListViewController" superclassName="CoreDataTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EVAGoodyListViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeListModal:" candidateClass="UIButton"/>
-                <relationship kind="action" name="reloadList:" candidateClass="UIButton"/>
-                <relationship kind="action" name="toggleFilter:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="refreshBtn" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -28,3 +28,4 @@
 #import "CoreDataTableViewController.h"
 #import "EVAGenericCell.h"
 #import "UIImageView+ImageUtil.h"
+#import "EVALocationMonitor.h"

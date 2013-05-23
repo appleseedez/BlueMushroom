@@ -29,8 +29,6 @@
 		1836BFF21743834700753063 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1836BFCD1743834700753063 /* Foundation.framework */; };
 		1836BFFA1743834800753063 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1836BFF81743834800753063 /* InfoPlist.strings */; };
 		1836C0071743858200753063 /* Snip20130515_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1836C0061743858200753063 /* Snip20130515_1.png */; };
-		1878C31A1743CFFC002AB6A9 /* Goody.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878C3191743CFFC002AB6A9 /* Goody.m */; };
-		1878C31B1743CFFC002AB6A9 /* Goody.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878C3191743CFFC002AB6A9 /* Goody.m */; };
 		1878C3211743D0FB002AB6A9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878C31F1743D0F7002AB6A9 /* CoreData.framework */; };
 		189DA2B71743939E008F4168 /* HomeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DA2B61743939E008F4168 /* HomeSpec.m */; };
 		189DA2BC1743AB2C008F4168 /* EVAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DA2BA1743AB2C008F4168 /* EVAAppDelegate.m */; };
@@ -78,6 +76,18 @@
 		18D51A8C1744CB0500354735 /* EVAGoodyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D51A8B1744CB0500354735 /* EVAGoodyListViewController.m */; };
 		18D51A8D1744CB0500354735 /* EVAGoodyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D51A8B1744CB0500354735 /* EVAGoodyListViewController.m */; };
 		18D51A911744CCE000354735 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D51A901744CCE000354735 /* CoreDataTableViewController.m */; };
+		BA0B62CF174B327B00C2440B /* EVALocationMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0B62CE174B327B00C2440B /* EVALocationMonitor.m */; };
+		BA0B62D0174B327B00C2440B /* EVALocationMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0B62CE174B327B00C2440B /* EVALocationMonitor.m */; };
+		BA0B62D1174B564500C2440B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DA3141743AEE9008F4168 /* CoreLocation.framework */; };
+		BA436BCD174A27E10017EB67 /* GoodyDetailSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA436BCC174A27E10017EB67 /* GoodyDetailSpec.m */; };
+		BAA58B53174D9DC500A06C17 /* akman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAA58B52174D9DC500A06C17 /* akman.jpg */; };
+		BAA58B56174DBA8A00A06C17 /* Goody+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA58B55174DBA8A00A06C17 /* Goody+CRUD.m */; };
+		BAD437F6174A2C34006D26C2 /* PersonalCenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD437F5174A2C34006D26C2 /* PersonalCenterSpec.m */; };
+		BAD437F8174A34F6006D26C2 /* SeachSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD437F7174A34F6006D26C2 /* SeachSpec.m */; };
+		BAEB324C174B9996005DAE88 /* UIButton+animateIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB324B174B9996005DAE88 /* UIButton+animateIcon.m */; };
+		BAEB324F174B99FF005DAE88 /* NSDate+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB324E174B99FF005DAE88 /* NSDate+Format.m */; };
+		BAEB325A174BA4C9005DAE88 /* Goody.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3259174BA4C9005DAE88 /* Goody.m */; };
+		BAEB325B174BA4C9005DAE88 /* Goody.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3259174BA4C9005DAE88 /* Goody.m */; };
 		CEE3C625AD404376AC131421 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B62A12308C470D9B3C5E2C /* libPods.a */; };
 		EDF22AA30FBD414CB6926A9F /* libPods-EVATests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3A88D7E0DF45BAB93EF8C0 /* libPods-EVATests.a */; };
 /* End PBXBuildFile section */
@@ -121,8 +131,6 @@
 		1836BFF71743834800753063 /* EVATests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EVATests-Info.plist"; sourceTree = "<group>"; };
 		1836BFF91743834800753063 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1836C0061743858200753063 /* Snip20130515_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20130515_1.png; sourceTree = "<group>"; };
-		1878C3181743CFFC002AB6A9 /* Goody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Goody.h; path = EVA/app/models/Goody.h; sourceTree = SOURCE_ROOT; };
-		1878C3191743CFFC002AB6A9 /* Goody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Goody.m; path = EVA/app/models/Goody.m; sourceTree = SOURCE_ROOT; };
 		1878C31F1743D0F7002AB6A9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		189DA2B61743939E008F4168 /* HomeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSpec.m; sourceTree = "<group>"; };
 		189DA2B91743AB2C008F4168 /* EVAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EVAAppDelegate.h; path = app/EVAAppDelegate.h; sourceTree = "<group>"; };
@@ -176,6 +184,20 @@
 		80B62A12308C470D9B3C5E2C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C7891973C54485A315FE15 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		AC3A88D7E0DF45BAB93EF8C0 /* libPods-EVATests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EVATests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0B62CD174B327B00C2440B /* EVALocationMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVALocationMonitor.h; sourceTree = "<group>"; };
+		BA0B62CE174B327B00C2440B /* EVALocationMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVALocationMonitor.m; sourceTree = "<group>"; };
+		BA436BCC174A27E10017EB67 /* GoodyDetailSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodyDetailSpec.m; sourceTree = "<group>"; };
+		BAA58B52174D9DC500A06C17 /* akman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = akman.jpg; sourceTree = "<group>"; };
+		BAA58B54174DBA8A00A06C17 /* Goody+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Goody+CRUD.h"; sourceTree = "<group>"; };
+		BAA58B55174DBA8A00A06C17 /* Goody+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Goody+CRUD.m"; sourceTree = "<group>"; };
+		BAD437F5174A2C34006D26C2 /* PersonalCenterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterSpec.m; sourceTree = "<group>"; };
+		BAD437F7174A34F6006D26C2 /* SeachSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeachSpec.m; sourceTree = "<group>"; };
+		BAEB324A174B9996005DAE88 /* UIButton+animateIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+animateIcon.h"; sourceTree = "<group>"; };
+		BAEB324B174B9996005DAE88 /* UIButton+animateIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+animateIcon.m"; sourceTree = "<group>"; };
+		BAEB324D174B99FF005DAE88 /* NSDate+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Format.h"; sourceTree = "<group>"; };
+		BAEB324E174B99FF005DAE88 /* NSDate+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Format.m"; sourceTree = "<group>"; };
+		BAEB3258174BA4C9005DAE88 /* Goody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Goody.h; path = EVA/app/models/Goody.h; sourceTree = SOURCE_ROOT; };
+		BAEB3259174BA4C9005DAE88 /* Goody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Goody.m; path = EVA/app/models/Goody.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0B62D1174B564500C2440B /* CoreLocation.framework in Frameworks */,
 				18252B971746655B00FDCB11 /* CoreGraphics.framework in Frameworks */,
 				1836BFF01743834700753063 /* SenTestingKit.framework in Frameworks */,
 				1836BFF11743834700753063 /* UIKit.framework in Frameworks */,
@@ -289,6 +312,9 @@
 				189DA2B61743939E008F4168 /* HomeSpec.m */,
 				1836BFF61743834800753063 /* Supporting Files */,
 				180C24A0174781B9004320C5 /* GoodySpec.m */,
+				BA436BCC174A27E10017EB67 /* GoodyDetailSpec.m */,
+				BAD437F5174A2C34006D26C2 /* PersonalCenterSpec.m */,
+				BAD437F7174A34F6006D26C2 /* SeachSpec.m */,
 			);
 			path = EVATests;
 			sourceTree = "<group>";
@@ -361,6 +387,7 @@
 		189DA2CB1743ACFC008F4168 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				BAA58B52174D9DC500A06C17 /* akman.jpg */,
 				18252B9817468A3300FDCB11 /* 480x150.jpg */,
 				189DA2CC1743ACFC008F4168 /* 20-gear-2.png */,
 				189DA2CD1743ACFC008F4168 /* 20-gear-2@2x.png */,
@@ -405,8 +432,8 @@
 		189DA31C1743CAB4008F4168 /* goody */ = {
 			isa = PBXGroup;
 			children = (
-				1878C3181743CFFC002AB6A9 /* Goody.h */,
-				1878C3191743CFFC002AB6A9 /* Goody.m */,
+				BAEB3258174BA4C9005DAE88 /* Goody.h */,
+				BAEB3259174BA4C9005DAE88 /* Goody.m */,
 			);
 			path = goody;
 			sourceTree = "<group>";
@@ -423,6 +450,14 @@
 		18D51A8E1744CCE000354735 /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BAA58B54174DBA8A00A06C17 /* Goody+CRUD.h */,
+				BAA58B55174DBA8A00A06C17 /* Goody+CRUD.m */,
+				BAEB324D174B99FF005DAE88 /* NSDate+Format.h */,
+				BAEB324E174B99FF005DAE88 /* NSDate+Format.m */,
+				BAEB324A174B9996005DAE88 /* UIButton+animateIcon.h */,
+				BAEB324B174B9996005DAE88 /* UIButton+animateIcon.m */,
+				BA0B62CD174B327B00C2440B /* EVALocationMonitor.h */,
+				BA0B62CE174B327B00C2440B /* EVALocationMonitor.m */,
 				180C249D17477142004320C5 /* UIImageView+ImageUtil.h */,
 				180C249E17477142004320C5 /* UIImageView+ImageUtil.m */,
 				180C24981747703F004320C5 /* EVAGenericCell.h */,
@@ -553,6 +588,7 @@
 				189DA3131743ACFC008F4168 /* wash@2x.png in Resources */,
 				18252B9917468A3300FDCB11 /* 480x150.jpg in Resources */,
 				180C249417476EB3004320C5 /* GoodyViews.storyboard in Resources */,
+				BAA58B53174D9DC500A06C17 /* akman.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,12 +684,16 @@
 				189DA2C81743AC2E008F4168 /* EVAHomeViewController.m in Sources */,
 				189DA3181743BD68008F4168 /* EVAHomeMenuViewCell.m in Sources */,
 				189DA31B1743C9DA008F4168 /* EVA.xcdatamodeld in Sources */,
-				1878C31A1743CFFC002AB6A9 /* Goody.m in Sources */,
 				18D51A8C1744CB0500354735 /* EVAGoodyListViewController.m in Sources */,
 				18D51A911744CCE000354735 /* CoreDataTableViewController.m in Sources */,
 				180C249717476FDC004320C5 /* EVAGoodyListCell.m in Sources */,
 				180C249A1747703F004320C5 /* EVAGenericCell.m in Sources */,
 				180C249F17477142004320C5 /* UIImageView+ImageUtil.m in Sources */,
+				BA0B62CF174B327B00C2440B /* EVALocationMonitor.m in Sources */,
+				BAEB324C174B9996005DAE88 /* UIButton+animateIcon.m in Sources */,
+				BAEB324F174B99FF005DAE88 /* NSDate+Format.m in Sources */,
+				BAEB325A174BA4C9005DAE88 /* Goody.m in Sources */,
+				BAA58B56174DBA8A00A06C17 /* Goody+CRUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,9 +703,13 @@
 			files = (
 				189DA2B71743939E008F4168 /* HomeSpec.m in Sources */,
 				189DA32B1743CECB008F4168 /* EVA.xcdatamodeld in Sources */,
-				1878C31B1743CFFC002AB6A9 /* Goody.m in Sources */,
 				18D51A8D1744CB0500354735 /* EVAGoodyListViewController.m in Sources */,
 				180C24A1174781B9004320C5 /* GoodySpec.m in Sources */,
+				BA436BCD174A27E10017EB67 /* GoodyDetailSpec.m in Sources */,
+				BAD437F6174A2C34006D26C2 /* PersonalCenterSpec.m in Sources */,
+				BAD437F8174A34F6006D26C2 /* SeachSpec.m in Sources */,
+				BA0B62D0174B327B00C2440B /* EVALocationMonitor.m in Sources */,
+				BAEB325B174BA4C9005DAE88 /* Goody.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
